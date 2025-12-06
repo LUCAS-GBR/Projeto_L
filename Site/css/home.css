@@ -1,0 +1,330 @@
+body{
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+}
+#btn-close-canva{
+    position: relative;
+    left: 92%;
+    top: 1%;
+    color: #ffffff;
+}
+
+#banner img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+  }
+.splide{
+    margin-top: 55px;
+}
+
+.col{
+    background-color: rgb(167, 167, 167);
+    justify-content: center;
+}
+
+.shirt{
+    width: 10rem;
+}
+/*Container que contém todos os produtos da home*/
+.container{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    margin-top: 100px;
+
+}
+.container a{
+    text-decoration: none;
+    color:#000000;
+    text-align: start;
+}
+
+.offcanvas-body {
+    overflow-y: auto;
+    max-height: 100%;
+}
+.imgnavcart img{
+    width: 35px;
+}
+.logo{
+    width: 70px;
+}
+
+/*Bloco de Produtos */
+.produto{
+    background-image: linear-gradient(75deg,#929292 , #Bab8b5 ,#Bab8b5 , #Bab8b5, #929292);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.produto p{
+    word-wrap: break-word;
+    width: 160px;
+}
+
+/*Botão de compra e do carrinho*/
+.btncontainer{
+    display: flex;
+}
+.btncontainer button{
+    margin-right: 18px;
+}
+
+/*Imagem do aviso no canto da tela*/
+.toast-header img{
+    width: 40px;
+}
+.toast-header{
+    border-radius: 0px;
+}
+
+/*carrinho*/
+.cart{
+    height: 35px;
+    position: relative;
+    left: 30px;
+}
+
+.buybtn{
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #1d44b8;
+    color: white;
+}
+.buybtn:hover{
+    background-color: #16348d;
+}
+.buybtn img{
+    width: 30px;
+}
+.buybtn a{
+    text-decoration: none;
+    color: white;
+}
+
+/*numero de itens no carrinho*/
+.badge{
+    border-radius: 50%;
+    position: relative;
+    right: 48%;
+    bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+#carrinho-lista img{
+    width: 120px;
+}
+.prod_Offcanva{
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    list-style-type:none;
+    padding: 10px;
+    margin: 15px;
+}
+#carrinho-lista div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+#carrinho-lista a{
+    text-decoration: none;
+}
+#carrinho-lista button{
+    height: 50px;
+    border: none;
+    background-color: #1d44b8;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.info-carrinho{
+    margin: 15px;
+}
+#Btn-limpar button{
+    background-color: #1d44b8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+#Btn-comprar button{
+    background-color: #1d44b8;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+}
+
+/*Canva lateral que mostra itens do carrinho*/
+.offcanvas{
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+}
+.offcanvas-body{
+    background-color: #000000;
+    padding: 0;
+}
+
+/*footer*/
+.footer{
+    margin-top: 10%;
+    padding: 20px;
+    padding-bottom: 0;
+    color: rgb(94, 94, 94);
+    font-size: small;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+}
+.footer div{
+    padding: 10px;
+    padding-bottom: 0;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+/*altera o tamanho da logo do Instagram*/
+.instaLogo{
+    width: 25px;
+}
+footer{
+  height: 60vh;
+
+}
+
+/*Área de responsividade, abaixo o tamanho maximo de telas e suas modificações*/
+
+@media (max-width:1024px){
+    .produto{
+        padding: 15px;
+    }
+    .container{
+        gap: 60px;
+    }
+    .footer{
+        gap: 4.5%;
+    }
+}
+@media (max-width:768px){
+    .produto{
+        padding: 10px;
+    }
+    .container{
+        gap: 15px;
+    }
+}
+
+@media (max-width:425px){
+    .splide__slide img{
+        height: 100%;
+        width: 100%;
+    }
+    .splide__track{
+        height: 22vh;
+    }
+    .shirt{
+        width: 8.5rem;
+    }
+    .logo{
+        width: 55px;
+    }
+    .searchBar{
+        display: none;
+    }
+    .searchBtn{
+        width: 25px;
+    }
+    .produto p{
+        word-wrap: break-word;
+        width: 136px;
+    }
+    
+
+}
+@media (max-width:320px){
+    .shirt{
+        width: 7rem;
+    }
+    .produto{
+        padding: 10px;
+        width: auto;
+    }
+    .buybtn{
+        height: 30px;
+        width: auto;
+    }
+    .btncontainer{
+        display: flex;
+        gap: none;
+    }
+    .buybtn img{
+        height: 20px;
+        width: auto;
+    }
+    .splide__track{
+        height: 23vh;
+    }
+}
+
+/*estilização da tela de produtos*/
+.containerProd{
+    display: flex;
+    padding: 60px;
+    gap: 80px;
+}
+.splide__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.descProd{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 50px;
+    margin-top: 10%;
+}
+.prodAddCart{
+    border: 0;
+    background-color: #16348d;
+    color: white;
+    height: 50px;
+    border-radius: 25px;
+    width: 100%;
+}
+.prodTamanho{
+    border: 0;
+    width: 50px;
+    font-size: large;
+}
+.prodRelacionados{
+    background-image: linear-gradient(75deg,#929292 , #Bab8b5 ,#Bab8b5 , #Bab8b5, #929292);
+    width: 230px;
+}
+.prodRelacionados a{text-decoration: none;
+    color: black;
+    
+}
+.prodRelacionados button{
+    border: none;
+    background-color: #1d44b8;
+    color: white;
+    border-radius: 10px;
+    height: 35px;
+}
+.prodRelacionados img{
+    width: 200px;
+}
+#relac__track{
+    width: 92%;
+}
