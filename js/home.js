@@ -14,7 +14,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 
 // fetch pega os dados da api deste endereço
-fetch('/produtos')
+fetch('https://projeto-l.onrender.com/produtos')
     //transforma em json
     .then(response => response.json())
     .then(data => {
@@ -23,7 +23,7 @@ fetch('/produtos')
         data.forEach(produto => {
             //adiciona o script do html dentro da variavel html para ser injetado no corpo da pagina
             html += `
-                <a href="produtos/produto.html?id=${produto.idproduto}">
+                <a href="https://projeto-l.onrender.com/produtos?id=${produto.idproduto}">
                     <div class="produto">
                         <img class="shirt" src="produtos_img/${produto.idproduto}/0.jpg" alt="">
                             <strong>
