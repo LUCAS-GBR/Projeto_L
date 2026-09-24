@@ -1,4 +1,4 @@
-fetch(`http://localhost:3000/fazer-pedido`)
+fetch(`https://projeto-l.onrender.com/fazer-pedido`)
 
 const form = document.getElementById('pedidoForm');
 

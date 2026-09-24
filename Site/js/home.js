@@ -14,7 +14,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 
 // fetch pega os dados da api deste endereço
-fetch('http://localhost:3000/produtos')
+fetch('https://projeto-l.onrender.com/produtos')
     //transforma em json
     .then(response => response.json())
     .then(data => {
