@@ -26,7 +26,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 const urlParams = new URLSearchParams(window.location.search);
 const produtoId = urlParams.get("id");
 
-fetch(`http://localhost:3000/produto?id=${produtoId}`)
+fetch(`https://projeto-l.onrender.com/produtos?id=${produtoId}`)
     .then(response => response.json())
     .then(produto => {
         document.getElementById("nome").textContent = `${produto.nome} ${produto.temporada}`;
@@ -70,7 +70,7 @@ document.getElementById("thumb-prod").innerHTML = `
         <li class="splide__slide"><img src="../Produtos_img/${produtoId}/6.jpg" alt="Thumb 4"></li>    
         `;
 
-fetch(`http://localhost:3000/relacionados`)
+fetch(`https://projeto-l.onrender.com/relacionados`)
 .then(response => response.json())
 .then(data => {
     let relacionados = '';
